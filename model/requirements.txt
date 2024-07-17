@@ -1,0 +1,21 @@
+pandas
+numpy
+seaborn
+matplotlib
+scikit-learn==1.2.2
+xgboost
+Flask
+fastapi==0.109.2
+sqlalchemy==2.0.27
+uvicorn==0.27.1
+pymysql==1.0.0
+pydantic==1.8.2
+python-dotenv==1.0.0
+mysql-connector-python
+jupyterlab
+pylint
+isort
+yapf
+plotly
+tqdm
+#-e .

@@ -1,0 +1,188 @@
+/* Reset CSS e estilos globais */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.root{
+  background-color: #b1e7bb;
+}
+
+/* Estilos do componente App */
+.App {
+  text-align: center;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px;
+  background-color: white;
+  position: relative;
+}
+
+.navbar{
+  width: 100%;
+  background-color: rgb(29 154 52);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.formulario{
+  margin-top: 70px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alterado para flex-start */
+  min-height: 100vh; /* Alterado para min-height */
+  padding-top: 70px; /* Adicionado para deixar espaço para o navbar */
+  box-sizing: border-box; /* Adicionado para incluir o padding no cálculo da altura */
+}
+
+
+.sobre_voce {
+  background-color: rgb(29 154 52);
+  text-align: center;
+  color: white;
+}
+
+.historico {
+  background-color: rgb(29 154 52);
+  text-align: center;
+  color: white;
+}
+
+/* Estilos para elementos dentro do App */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Estilos para elementos de formulário */
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='date'],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='number']:focus,
+input[type='date']:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.botoes .option-button {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top:30px ;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.table-container {
+  margin: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+/* Media queries e estilos responsivos */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px; /* Reduz o preenchimento para telas menores */
+  }
+
+  .navbar {
+    position: relative; /* Altera a posição para relativa para telas menores */
+  }
+
+  .formulario {
+    margin-top: 50px; /* Reduz a margem superior para telas menores */
+  }
+
+  .dashboard {
+    height: auto; /* Ajusta a altura automaticamente para telas menores */
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='number'],
+  input[type='date'],
+  select {
+    width: calc(100% - 20px); /* Ajusta a largura dos inputs para telas menores */
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px; /* Reduz a largura máxima do container para telas maiores */
+  }
+
+}

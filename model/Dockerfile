@@ -1,0 +1,13 @@
+# Use uma imagem base do Python
+FROM python:3.9
+
+# Define o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copia os arquivos de dependências e 
+COPY . /app
+
+RUN pip install -r requirements.txt
+
+# Comando para iniciar o servidor FastAPI
+CMD ["uvicorn", "app.preditor:app", "--reload", "--host", "0.0.0.0", "--port", "8001"]
